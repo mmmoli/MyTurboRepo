@@ -1,14 +1,14 @@
 {
-  "name": "ui",
+  "name": "@myturborepo/ui",
   "version": "0.0.0",
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^17.0.37",
+    "@myturborepo/config": "workspace:*",
+    "@myturborepo/tsconfig": "workspace:*",
     "@types/react-dom": "^17.0.11",
-    "tsconfig": "workspace:*",
-    "config": "workspace:*",
+    "@types/react": "^17.0.37",
     "typescript": "^4.5.3"
   }
 }
