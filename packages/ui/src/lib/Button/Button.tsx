@@ -1,12 +1,18 @@
 import * as React from "react";
 import { VariantProps } from "@stitches/react";
-import { styled, theme } from "../styled";
+import { styled, theme } from "../../styled";
 
 export const Button = styled("button", {
   backgroundColor: theme.colors.green500,
-  borderRadius: "9999px",
-  fontSize: "13px",
   border: "0",
+  borderRadius: "9999px",
+  color: "white",
+  cursor: "pointer",
+  fontSize: "13px",
+
+  "&:hover": {
+    backgroundColor: theme.colors.purple500,
+  },
 });
 
 export type ButtonVariants = VariantProps<typeof Button>;

@@ -1,5 +1,12 @@
 {
   "extends": "@myturborepo/tsconfig/react-library.json",
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // Emotion typedefs now point to an empty file, which unsets all declarations
+      "@emotion/core": ["./src/types/emotion.d.ts"]
+    }
+  }
 }
