@@ -1,5 +1,5 @@
 {
-  "name": "@myturborepo/ui",
+  "name": "@myturborepo/theme",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,24 +9,21 @@
   "files": [
     "dist/**"
   ],
-  "description": "Dumb UI components that know nothing about how they're being used.",
+  "description": "System UI theme",
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react --sourcemap",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --sourcemap",
     "lint": "TIMING=1 eslint src --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
-  },
-  "dependencies": {
-    "@myturborepo/theme": "workspace:*",
-    "@stitches/react": "^1.2.6"
   },
   "devDependencies": {
     "@myturborepo/config": "workspace:*",
     "@myturborepo/tsconfig": "workspace:*",
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
     "eslint": "7.32.0",
     "tsup": "^5.11.13",
     "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.6"
   }
 }

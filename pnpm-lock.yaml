@@ -43,18 +43,40 @@ importers:
       eslint-config-next: 12.0.10
       eslint-config-prettier: 8.3.0
 
+  packages/theme:
+    specifiers:
+      '@myturborepo/config': workspace:*
+      '@myturborepo/tsconfig': workspace:*
+      '@stitches/react': ^1.2.6
+      eslint: 7.32.0
+      tsup: ^5.11.13
+      typescript: ^4.5.3
+    dependencies:
+      '@stitches/react': 1.2.6
+    devDependencies:
+      '@myturborepo/config': link:../config
+      '@myturborepo/tsconfig': link:../tsconfig
+      eslint: 7.32.0
+      tsup: 5.11.13_typescript@4.5.5
+      typescript: 4.5.5
+
   packages/tsconfig:
     specifiers: {}
 
   packages/ui:
     specifiers:
       '@myturborepo/config': workspace:*
+      '@myturborepo/theme': workspace:*
       '@myturborepo/tsconfig': workspace:*
+      '@stitches/react': ^1.2.6
       '@types/react': ^17.0.37
       '@types/react-dom': ^17.0.11
       eslint: 7.32.0
       tsup: ^5.11.13
       typescript: ^4.5.3
+    dependencies:
+      '@myturborepo/theme': link:../theme
+      '@stitches/react': 1.2.6
     devDependencies:
       '@myturborepo/config': link:../config
       '@myturborepo/tsconfig': link:../tsconfig
@@ -295,6 +317,12 @@ packages:
 
   /@rushstack/eslint-patch/1.1.0:
     resolution: {integrity: sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==}
+    dev: false
+
+  /@stitches/react/1.2.6:
+    resolution: {integrity: sha512-gRVITYj8W4jJmoiVxWDv72yCvd12VvtUUAnTzs07EqmtvGCVgKZu3Dx0x5KVCcb0b6tfgvvNH2L84YrzdM4Mag==}
+    peerDependencies:
+      react: '>= 16.3.0'
     dev: false
 
   /@types/json5/0.0.29:
