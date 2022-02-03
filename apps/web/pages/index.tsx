@@ -10,7 +10,7 @@ export default function Web() {
         },
       }}
     >
-      <h1>Web</h1>
+      <h1>Web 2</h1>
       <Button>Click me</Button>
     </Box>
   );
