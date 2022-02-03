@@ -1,0 +1,35 @@
+{
+  "name": "@myturborepo/docs",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.0.1",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "lint": "TIMING=1 eslint src --fix",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@myturborepo/ui": "workspace:*",
+    "gatsby": "^4.6.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@myturborepo/config": "workspace:*",
+    "@myturborepo/tsconfig": "workspace:*",
+    "gatsby-plugin-pnpm": "^1.2.10",
+    "eslint": "7.32.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
