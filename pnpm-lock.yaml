@@ -15,6 +15,7 @@ importers:
       '@myturborepo/config': workspace:*
       '@myturborepo/tsconfig': workspace:*
       '@myturborepo/ui': workspace:*
+      eslint: 7.32.0
       gatsby: ^4.6.1
       gatsby-plugin-pnpm: ^1.2.10
       react: ^17.0.1
@@ -27,6 +28,7 @@ importers:
     devDependencies:
       '@myturborepo/config': link:../../packages/config
       '@myturborepo/tsconfig': link:../../packages/tsconfig
+      eslint: 7.32.0
       gatsby-plugin-pnpm: 1.2.10_gatsby@4.6.1
 
   apps/web:
