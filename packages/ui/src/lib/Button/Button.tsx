@@ -9,6 +9,7 @@ export const Button = styled("button", {
   color: "white",
   cursor: "pointer",
   fontSize: "13px",
+  padding: `${theme.space[2]} ${theme.space[3]}`,
 
   "&:hover": {
     backgroundColor: theme.colors.purple500,

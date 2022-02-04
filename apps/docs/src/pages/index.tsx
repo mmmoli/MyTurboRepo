@@ -1,7 +1,8 @@
-import { Button, Box, theme } from "@myturborepo/ui";
+import { Button, Box, theme, globalStyles } from "@myturborepo/ui";
 import React from "react";
 
 export const HomePage: React.FC = () => {
+  globalStyles();
   return (
     <Box
       css={{
