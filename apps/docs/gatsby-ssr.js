@@ -1,7 +1,8 @@
 import * as React from "react";
-import { getCssText } from "@myturborepo/ui";
+import { getCssText, globalStyles } from "@myturborepo/ui";
 
 export const onRenderBody = ({ setHeadComponents }) => {
+  globalStyles();
   setHeadComponents([
     <style
       id="stitches"
