@@ -1,5 +1,5 @@
 {
-  "name": "@myturborepo/with-nextjs",
+  "name": "@myturborepo/with-nextjs-supabase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
